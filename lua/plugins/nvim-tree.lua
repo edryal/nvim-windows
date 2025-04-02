@@ -16,6 +16,8 @@ return {
 	config = function()
 		require("nvim-tree").setup({
 			git = {
+                -- You can enable git status on files here,
+                -- but the tree stutters a bit on really big projects
 				enable = false,
 			},
 			view = {

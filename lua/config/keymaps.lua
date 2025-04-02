@@ -58,14 +58,17 @@ vim.api.nvim_set_keymap(
 )
 
 -- Testing
-vim.keymap.set("n", "<leader>tc", function()
-	if vim.bo.filetype == "java" then
-		require("jdtls").test_class()
-	end
-end, { desc = "[T]est [C]lass", noremap = true })
+-- vim.keymap.set("n", "<leader>tc", function()
+-- 	if vim.bo.filetype == "java" then
+-- 		require("jdtls").test_class()
+-- 	end
+-- end, { desc = "[T]est [C]lass", noremap = true })
+--
+-- vim.keymap.set("n", "<leader>tm", function()
+-- 	if vim.bo.filetype == "java" then
+-- 		require("jdtls").test_nearest_method()
+-- 	end
+-- end, { desc = "[T]est nearest [M]ethod", noremap = true })
 
-vim.keymap.set("n", "<leader>tm", function()
-	if vim.bo.filetype == "java" then
-		require("jdtls").test_nearest_method()
-	end
-end, { desc = "[T]est nearest [M]ethod", noremap = true })
+-- Swagger preview
+vim.keymap.set("n", "<leader>pt", "<cmd>SwaggerPreviewToggle<cr>", { desc = "Swagger Preview [T]oggle" })

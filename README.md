@@ -1,7 +1,7 @@
 # Dependencies
 - make
 - fzf
-- ccc
+- gcc
 - nodejs
 
 ---

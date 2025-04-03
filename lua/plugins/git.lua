@@ -9,7 +9,7 @@ return {
 	{
 		"tpope/vim-fugitive",
 		config = function()
-			vim.keymap.set("n", "<leader>gb", ":Git blame<cr>", { desc = "[G]it [B]lame" })
+			vim.keymap.set("n", "<leader>gB", ":Git blame<cr>", { desc = "[G]it [B]lame" })
 			vim.keymap.set("n", "<leader>gp", "Git push", { desc = "[G]it [P]ush" })
 		end,
 	},

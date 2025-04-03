@@ -1,20 +1,28 @@
-# Dependencies
-- make
-- fzf
-- gcc
-- nodejs
+> ⚠️ **Note:** This configuration is still a work in progress
 
----
-Install them however you want as long as they're available in the PATH.
+## Prerequisites
 
-This is how I did it:
-> scoop install make gcc fzf
+### Required Tools
+The following tools must be available in your PATH:
 
-Node.js was installed from [the website](https://nodejs.org/en).
+- **make** - Build automation tool
+- **fzf** - Command-line fuzzy finder
+- **gcc** - GNU Compiler Collection
+- **Node.js** - JavaScript runtime environment
 
----
+### Installation Guide
 
-# Java dependencies
-JDTLS requires Java 21 or higher to run the langauge server.
+#### Using [Scoop](https://scoop.sh/) (Windows):
+```
+scoop install make gcc fzf
+```
 
-You can change the runtime at any time to use a different version if you are bound to a specific version in the projects. But the language server itself needs Java 21 to run the launcher.
+For Node.js, install directly from the [official website](https://nodejs.org/en).
+
+## Java Requirements
+
+### Language Server Configuration
+This project uses JDTLS (Java Language Server) which requires:
+- **Java 21+** to run the language server itself
+
+You can configure different Java runtimes for your projects while maintaining Java 21+ for the language server.
